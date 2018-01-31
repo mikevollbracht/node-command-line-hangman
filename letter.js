@@ -19,10 +19,7 @@ Letter = function (letter) {
 	//determines if the guess matches the value 
 	this.checkGuess = function(guess) {
 
-		if (guess === this.value && this.beenGuessed === true) {
-			//if letter has been guessed already
-			return "guessed";
-		} else if (guess === this.value) {
+		if (guess === this.value) {
 			//if letter has not been guessed but is a match
 			this.beenGuessed = true;
 			return "correct";
